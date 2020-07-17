@@ -1,0 +1,43 @@
+---
+title: content-adapter
+excerpt: retrieving data from confluence
+---
+
+<Container>
+
+# [Gatsby-Source-Confluence](https://www.gatsbyjs.cn/packages/gatsby-source-confluence/#gatsby-source-confluence)
+
+A quick and dirty [Gatsby source plugin](https://www.gatsbyjs.cn/packages/gatsby-source-confluence/#gatsby-source-confluence) for retrieving data from everybody’s least favourite content editor, Confluence.
+
+An [example site](https://gatsby-source-confluence.netlify.com/) is available on **Netlify**
+
+## Installation
+
+<code>npm i --save gatsby-source-confluence</code>
+
+## Usage
+
+Add the following to your gatsby-config.js file:
+
+<Code>CODE</Code>
+
+## Please ensure that the following parameters are set:
+
+- hostname (Required): the Confluence base URL to use for all requests
+- auth: Your username.password base64 encoded with a Basic prefix. Please don’t check this in to source control ;)
+- cql (Required): a CQL expression to filter out a list of documents
+- limit: Defaults to 10. Please set this to the maximum number of documents to load in.
+
+## Known issues
+
+- Confluence storage often has macros embedded. Macros not handled.
+- Only handles pages, not blog posts
+- No page tree hierarchy (I told you this was rough!)
+- Pull requests welcome!
+
+## Further Readings
+
+- [CQL xpression - Search Syntax](https://support.atlassian.com/confluence-cloud/docs/confluence-search-syntax/)
+- [Netlify Demo](https://gatsby-source-confluence.netlify.app/wiki/an-easy-intro-to-using-confluence)
+
+</Container>

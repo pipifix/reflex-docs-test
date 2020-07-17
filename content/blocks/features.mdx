@@ -9,13 +9,13 @@ export const Features = ({ ...props }) => (
       </P>
       <Grid col="1|2|3" mt="8|10|12" gap="4|6|8">
         <Feature
-          icon="smartphone"
-          heading="Mobile ready"
+          icon="cloud"
+          heading="Sicher speichern"
           description="Vivamus magna just, lacinia eget consect sed."
         />
         <Feature
-          icon="layout"
-          heading="Unique Design"
+          icon="server"
+          heading="geprüfte Infrastruktur"
           description="Vivamus magna just, lacinia eget consect sed."
         />
         <Feature
@@ -24,7 +24,7 @@ export const Features = ({ ...props }) => (
           description="Vivamus magna just, lacinia eget consect sed."
         />
         <Feature
-          icon="link"
+          icon="codesandbox"
           heading="Multi-purpose"
           description="Vivamus magna just, lacinia eget consect sed."
         />
@@ -41,7 +41,7 @@ export const Features = ({ ...props }) => (
       </Grid>
     </Container>
   </Section>
-)
+);
 
 export const Feature = ({ icon, heading, description, ...props }) => (
   <Flexbox
@@ -63,4 +63,4 @@ export const Feature = ({ icon, heading, description, ...props }) => (
       </P>
     </Div>
   </Flexbox>
-)
+);
